@@ -100,6 +100,6 @@ app.get('/api/pages', async (req: Request, res: Response) => {
 
 // Start the server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen('0.0.0.0', () => {
   console.log(`Server is running on port ${PORT}`);
 });
